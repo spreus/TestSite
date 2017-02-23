@@ -6,13 +6,13 @@
     "type": "project",
     "require": {
         "php": ">=5.6.4",
-        "barryvdh/laravel-ide-helper": "^2.2",
+        "barryvdh/laravel-ide-helper": "^2.3",
         "cviebrock/eloquent-sluggable": "^4.2",
         "doctrine/dbal": "^2.5",
         "laravel/framework": "5.4.*",
         "laravel/tinker": "^1.0",
         "laravelcollective/html": "5.4.1",
-        "zizaco/entrust": "^1.7"
+        "zizaco/entrust": "1.8.0-alpha1"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
@@ -45,6 +45,8 @@
         ],
         "post-update-cmd": [
             "Illuminate\\Foundation\\ComposerScripts::postUpdate",
+            "php artisan ide-helper:generate",
+            "php artisan ide-helper:meta",
             "php artisan optimize"
         ]
     },

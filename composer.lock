@@ -4,21 +4,21 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "c26c2fc5e057fc23082157a278eea882",
-    "content-hash": "480451ec2e6b977d31c02282ef4bde94",
+    "hash": "341f05b86690c757a6c73b95e8f3172d",
+    "content-hash": "41aef02469ab02b6efa1a8a999134cbf",
     "packages": [
         {
             "name": "barryvdh/laravel-ide-helper",
-            "version": "v2.3.0",
+            "version": "v2.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/barryvdh/laravel-ide-helper.git",
-                "reference": "555d3e37009bdb78f5d8bcea6eb8a816529a5cfa"
+                "reference": "25c8de637ddf79567d721c1856616be01db7b960"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/barryvdh/laravel-ide-helper/zipball/555d3e37009bdb78f5d8bcea6eb8a816529a5cfa",
-                "reference": "555d3e37009bdb78f5d8bcea6eb8a816529a5cfa",
+                "url": "https://api.github.com/repos/barryvdh/laravel-ide-helper/zipball/25c8de637ddf79567d721c1856616be01db7b960",
+                "reference": "25c8de637ddf79567d721c1856616be01db7b960",
                 "shasum": ""
             },
             "require": {
@@ -41,7 +41,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.2-dev"
+                    "dev-master": "2.3-dev"
                 }
             },
             "autoload": {
@@ -71,7 +71,7 @@
                 "phpstorm",
                 "sublime"
             ],
-            "time": "2017-02-13 19:20:12"
+            "time": "2017-02-20 12:54:53"
         },
         {
             "name": "barryvdh/reflection-docblock",
@@ -2606,16 +2606,16 @@
         },
         {
             "name": "zizaco/entrust",
-            "version": "1.7.0",
+            "version": "1.8.0-alpha1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Zizaco/entrust.git",
-                "reference": "1fa77fadfbc8840ee1e9a6ce483b39ba985f81d2"
+                "reference": "7bc1d1448096b94a8dfd55a39c8dc3783a59ff71"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Zizaco/entrust/zipball/1fa77fadfbc8840ee1e9a6ce483b39ba985f81d2",
-                "reference": "1fa77fadfbc8840ee1e9a6ce483b39ba985f81d2",
+                "url": "https://api.github.com/repos/Zizaco/entrust/zipball/7bc1d1448096b94a8dfd55a39c8dc3783a59ff71",
+                "reference": "7bc1d1448096b94a8dfd55a39c8dc3783a59ff71",
                 "shasum": ""
             },
             "require": {
@@ -2670,7 +2670,7 @@
                 "permission",
                 "roles"
             ],
-            "time": "2016-03-09 17:05:35"
+            "time": "2016-11-04 16:29:09"
         }
     ],
     "packages-dev": [
@@ -4143,7 +4143,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "zizaco/entrust": 15
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {

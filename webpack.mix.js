@@ -11,5 +11,11 @@ const { mix } = require('laravel-mix');
  |
  */
 
-mix.js('resources/assets/js/app.js', 'public/js')
-   .sass('resources/assets/sass/app.scss', 'public/css');
+mix.copy('node_modules/admin-lte/dist', 'public/vendor/admin-lte', false)
+    .copy('node_modules/jquery/dist', 'public/vendor/jquery', false)
+    .copy('node_modules/toastr/build', 'public/vendor/toastr', false)
+    .copy('node_modules/bootstrap-sass/assets/javascripts/bootstrap.js', 'public/vendor/bootstrap/bootstrap.js', false)
+    // .js('resources/assets/js/app.js', 'public/js')
+    .sass('resources/assets/sass/app.scss', 'public/css')
+    .version();
+    

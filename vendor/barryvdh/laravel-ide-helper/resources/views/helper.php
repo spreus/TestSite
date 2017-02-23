@@ -12,10 +12,11 @@ namespace  {
 }
 
 <?php foreach($namespaces as $namespace => $aliases): ?>
+<?php if ($namespace == '\Illuminate\Database\Eloquent'): continue; endif; ?>
 namespace <?= $namespace == '__root' ? '' : trim($namespace, '\\') ?> {
 <?php foreach($aliases as $alias): ?>
 
-    <?= $alias->getClassType() ?> <?= $alias->getExtendsCLass() ?> {
+    <?= $alias->getClassType() ?> <?= $alias->getExtendsClass() ?> {
         <?php foreach($alias->getMethods() as $method): ?>
 
         <?= trim($method->getDocComment('        ')) ?>
