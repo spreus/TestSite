@@ -12,6 +12,7 @@
         "laravel/framework": "5.4.*",
         "laravel/tinker": "^1.0",
         "laravelcollective/html": "5.4.1",
+        "propaganistas/laravel-phone": "^2.8",
         "zizaco/entrust": "1.8.0-alpha1"
     },
     "require-dev": {

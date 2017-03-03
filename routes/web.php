@@ -30,3 +30,7 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index');
 Route::get('/test', 'HomeController@testView');
+Route::get('form1', 'TestFormController@create');
+Route::get('articles','ArticlesController@index');
+Route::get('articles/create', 'ArticlesController@create');
+Route::get('articles/{id}','ArticlesController@show');
