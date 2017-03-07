@@ -1,9 +1,4 @@
-<?php
+@extends('layouts.app')
 
-/**
- *
- * @author spreus
- */
-class create {
+@section('content')
     
-}
